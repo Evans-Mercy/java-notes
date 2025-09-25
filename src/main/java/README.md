@@ -21,8 +21,7 @@ public static void main(String[] args) {
 *IF YOU FIND YOURSELF COPY-PASTING CODE, STOP AND RE-EVALUATE YOUR LIFE :)*
 
 # METHODS
-## Method Structure
-
+## **Method Structure** (Signature & body)
 ### Method Signature
 ```
 public static void printMoney (double amount) 
