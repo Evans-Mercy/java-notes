@@ -16,11 +16,11 @@ public class Methods {
 }
 
 /*
--IF YOU FIND YOURSELF COPY-PASTING CODE, STOP AND RE-EVALUATE YOUR LIFE :)
+**IF YOU FIND YOURSELF COPY-PASTING CODE, STOP AND RE-EVALUATE YOUR LIFE :)**
 
 Method Structure
-*Method Signature
- - public static void printMoney(double amount)
+Method Signature
+ public static void printMoney (double amount)
         public - access modifier
         static - belongs to the class
         void = return type (does not return a value)
@@ -29,8 +29,8 @@ Method Structure
             double = type
             amount = variable name
 
-*Method body
- - code inside {..}
+Method body
+ code inside {..}
 
 -Parameter: Variable inside method definition
         (double amount) - is passed when calling the method
@@ -58,7 +58,7 @@ Common Return Types
     boolean → returns true/false
 
 Parameters
-    You can have:
+    -You can have:
     No parameters → methodName()
     One parameter → methodName(int x)
     Multiple parameters → methodName(int x, String y)
