@@ -198,6 +198,7 @@ Output
  ```
  Mercy is 75 years old and worked 42.5 hours today
  ```
+
 ### Formatting Tips
 - Always match placeholders with the right argument type.
 - Use precision (.2f) for money or decimals.
