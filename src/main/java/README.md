@@ -19,6 +19,7 @@ public static void main(String[] args) {
     }
 }
 ```
+**use code as reference for the notes**
 
 *IF YOU FIND YOURSELF COPY-PASTING CODE, STOP AND RE-EVALUATE YOUR LIFE :)*
 
