@@ -1,4 +1,8 @@
 
+*IF YOU FIND YOURSELF COPY-PASTING CODE, STOP AND RE-EVALUATE YOUR LIFE Haha:)*
+
+# METHODS
+## **Method Structure** (Signature & body)
 ```
 Example:
 
@@ -19,17 +23,12 @@ public static void main(String[] args) {
     }
 }
 ```
-**use code as reference for the notes**
 
-*IF YOU FIND YOURSELF COPY-PASTING CODE, STOP AND RE-EVALUATE YOUR LIFE Haha:)*
-
-# METHODS
-## **Method Structure** (Signature & body)
 ### Method Signature
 ```
 Example:
 
-public static void printMoney (double amount) 
+public static void printMoney (double dollarAmount) 
 ```
 - public - access modifier
 - static - belongs to the class
@@ -161,3 +160,45 @@ Example:
   
   double price = (age < 18) ? 18.00 : 25.00;
 ```
+
+# STRING FORMATTING
+### Basic formatting with **printf**
+- **System.out.printf()** lets you print formatted strings.
+```
+Example:
+
+        double price = 9.9555;
+        System.out.printf("Price: $%.2f", price);
+```
+### Common Placeholders
+
+   | Placeholder | Meaning                           | Example Output |
+   |-------------|-----------------------------------|----------------|
+   | %s          | String                            | "Mercy"        |
+   | %d          | Integer                           | 42             |
+   | %f          | Floating-point number             | 3.141593       |
+   | %-10f       | Float (left-aligned)              | "3.141593   "  |
+   | %10f        | Float (right-aligned)             | "   3.141593"  |
+   | %.2f        | Float rounded to 2 decimal places | 3.14           |
+   | %n          | New line                          | (line break)   |
+   | %%          | Literal percent sign              | %              |
+
+
+```
+Example:
+        String name = "Mercy";
+        int age = 75;
+        double hoursWorked = 42.5;
+
+System.out.printf("%s is %d years old and worked %.1f hours today%n", name, age, hoursWorked);
+
+```
+Output
+
+ ```
+ Mercy is 75 years old and worked 42.5 hours today
+ ```
+### Formatting Tips
+- Always match placeholders with the right argument type.
+- Use precision (.2f) for money or decimals.
+- Keep placeholders in order, arguments fill them left to right.
