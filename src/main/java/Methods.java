@@ -1,16 +1,16 @@
-public class Main {
+public class Methods {
     public static void main(String[] args) {
 
-        double dollarAmount = 9.9555;
+         printMoney(9.9555); //example call
+         printMoney(-5);     //example negative value
     }
 
-    public static void printMoney(double amount) {
-
+    public static void printMoney(double dollarAmount) {
 
         if (dollarAmount < 0) {
             System.err.println("Dollar amount is negative");
         }
-        System.out.printf("$%.2f", dollarAmount);
+        System.out.printf("$%.2f%n", dollarAmount);
 
     }
 }
@@ -22,7 +22,7 @@ Method Structure
 *Method Signature
  - public static void printMoney(double amount)
         public - access modifier
-        static - belongs to class
+        static - belongs to the class
         void = return type (does not return a value)
         printMoney = method name
         (double amount) = parameters
@@ -32,9 +32,16 @@ Method Structure
 *Method body
  - code inside {..}
 
--Parameter: Variable inside method definition (double amount)
+-Parameter: Variable inside method definition
+        (double amount) - is passed when calling the method
+
 -Argument: Actual value passed when calling (printMoney(9.9555))
 (you can have more than one parameter or none)
+
+Conditional statement
+        if (amount < 0) {
+            System.err.println("Dollar amount is negative");
+        }
 
 Output & Formatting
 - System.out.printf("$%.2f", amount);
@@ -50,6 +57,10 @@ Common Return Types
     String → returns text
     boolean → returns true/false
 
-
+Parameters
+    You can have:
+    No parameters → methodName()
+    One parameter → methodName(int x)
+    Multiple parameters → methodName(int x, String y)
 
  */
