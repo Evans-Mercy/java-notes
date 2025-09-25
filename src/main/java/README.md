@@ -1,5 +1,7 @@
 
 ```
+Example:
+
 public class Methods {
 public static void main(String[] args) {
 
@@ -24,6 +26,8 @@ public static void main(String[] args) {
 ## **Method Structure** (Signature & body)
 ### Method Signature
 ```
+Example:
+
 public static void printMoney (double amount) 
 ```
 - public - access modifier
@@ -37,7 +41,9 @@ public static void printMoney (double amount)
 
 ### Method body
 * code inside { }
-```java
+```
+Example:
+
 /*
       {
         if (dollarAmount < 0) {
@@ -61,18 +67,23 @@ public static void printMoney (double amount)
 
 ### Conditional statement
 ```
+Example:
+
 if (amount < 0) {
 System.err.println("Dollar amount is negative");
 }
 ```
 ### Output & Formatting
 ```
+Example:
+
   System.out.printf("$%.2f", amount);
   ```
   - %f → floating-point number
   - %.2f → round to 2 decimal placeS
 ```
 Example:
+
     $%.2f → prints like $9.96
 ```
   - System.err.println → prints error messages (usually in red in console).
@@ -121,6 +132,7 @@ Example:
 **Add parentheses if you want part of an expression to be evaluated first.**
 ```
 Example:
+
   if ((age < 18) || (age >= 65)) {
   // condition met if under 18 OR over 65
   }
@@ -145,5 +157,6 @@ Example:
   **Syntax: (condition) ? valueIfTrue : valueIfFalse**
 ```
   Example:
+  
   double price = (age < 18) ? 18.00 : 25.00;
 ```
