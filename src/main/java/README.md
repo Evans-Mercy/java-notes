@@ -166,7 +166,6 @@ Example:
 - **System.out.printf()** lets you print formatted strings.
 ```
 Example:
-
         double price = 9.9555;
         System.out.printf("Price: $%.2f", price);
 ```
