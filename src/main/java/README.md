@@ -1,4 +1,4 @@
-# METHODS
+
 ```
 public class Methods {
 public static void main(String[] args) {
@@ -20,6 +20,7 @@ public static void main(String[] args) {
 
 *IF YOU FIND YOURSELF COPY-PASTING CODE, STOP AND RE-EVALUATE YOUR LIFE :)*
 
+# METHODS
 ## Method Structure
 
 ### Method Signature
