@@ -115,7 +115,7 @@ Example:
 ### OPERATORS
 - ==   equals (comparison for numbers/booleans, NOT strings)
 - !=   not equals
-- < > <= >=   comparison operators (numbers only)
+- < >  <=  >=   comparison operators (numbers only)
 - &&   AND (both conditions must be true)
 - ||   OR  (at least one condition must be true)
 - !    NOT (reverses the boolean value)
@@ -166,7 +166,6 @@ Example:
 - **System.out.printf()** lets you print formatted strings.
 ```
 Example:
-
         double price = 9.9555;
         System.out.printf("Price: $%.2f", price);
 ```
