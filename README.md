@@ -83,6 +83,7 @@ Example:
   - System.err.println → prints error messages (usually in red in console).
 
 ## **Common Return Types**
+A method can return 0 or 1
 - void → no value returned
 - int → returns whole number
 - double → returns decimal number
@@ -94,6 +95,130 @@ Example:
 - No parameters → methodName()
 - One parameter → methodName(int x)
 - Multiple parameters → methodName(int x, String y)
+
+**-Expression is a combination of values, variables, or operators that evaluates to a single value**
+
+**- It's good practice to have no more than 20 lines in a method.**
+
+**- Ctrl b - tells you what the highlighted item is.**
+
+ # Scanners
+
+The Scanner class takes input from the user (like numbers, words, or lines of text).
+
+You need to import it before using:
+```
+import java.util.Scanner;
+```
+## Set Up
+
+- Create a Scanner object:
+```
+Scanner myScanner = new Scanner(System.in);
+```
+
+- Use it to read different types of input:
+```
+int number =     myScanner.nextInt();       // reads an integer  
+double price =   myScanner.nextDouble();    // reads a decimal  
+String word =    myScanner.next();          // reads one word  
+String line =    myScanner.nextLine();      // reads a whole line
+```
+## Examples
+
+Example 1: Ask for name and age
+```
+import java.util.Scanner;
+
+        public class Main {
+        public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+                System.out.print("Enter your name: ");
+                String name = input.nextLine();
+        
+                System.out.print("Enter your age: ");
+                int age = input.nextInt();
+        
+                System.out.println("Hello " + name + ", you are " + age + " years old!");
+            }
+        }
+```
+## Breakdown
+1. **import java.util.Scanner;**
+
+Tells Java you want to use the Scanner class from the built-in java.util package.
+
+Without this line, Java won’t know what Scanner is.
+
+2. **public class Main {**
+
+Defines a class called Main.
+
+In Java, all code must live inside a class.
+
+3. **public static void main(String[] args) {**
+
+The main method.
+
+This is the entry point — the first thing Java runs in your program.
+
+4. **Scanner input = new Scanner(System.in);**
+
+Creates a Scanner object named input.
+
+System.in means it will read data from the keyboard.
+
+5. **System.out.print("Enter your name: ");**
+
+Prints a message on the screen without moving to a new line.
+
+Tells the user what they need to type.
+
+6. **String name = input.nextLine();**
+
+Waits for the user to type something and hit Enter.
+
+Stores the whole line of text into the variable name.
+
+7. **System.out.print("Enter your age: ");**
+
+Prints another message, asking for the user’s age.
+
+8. **int age = input.nextInt();**
+
+Waits for the user to type a whole number and hit Enter.
+
+Stores that number in the variable age.
+
+9. **System.out.println("Hello " + name + ", you are " + age + " years old!");**
+
+Prints a message combining text + variables.
+
+Example output: Hello Mercy, you are 26 years old!
+
+10. **} (closing braces)**
+
+Close the main method and the Main class.
+
+
+## Common Mistakes
+
+- Forgetting to import java.util.Scanner;.
+
+- Using nextLine() after nextInt() or nextDouble() → sometimes it “skips” because of leftover newline characters. (Fix: add an extra nextLine() to clear input.)
+
+- Not closing the Scanner (use input.close(); at the end).
+
+## Tips
+
+- Use nextLine() when you want the whole sentence.
+
+- Use nextInt(), nextDouble(), etc. only when you need specific types.
+
+- Always guide your user with System.out.print("...") before input.
+
+
 
 
 # CONDITIONAL STATEMENTS
@@ -191,3 +316,4 @@ Output
 - Always match placeholders with the right argument type.
 - Use precision (.2f) for money or decimals.
 - Keep placeholders in order, arguments fill them left to right.
+
