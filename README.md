@@ -5,7 +5,6 @@
 ## **Method Structure** (Signature & body)
 ```
 Example:
-            
             public class Methods {
             public static void main(String[] args) {
             
@@ -27,37 +26,35 @@ Example:
 ### Method Signature
 ```
 Example:
-
-public static void printMoney(double dollarAmount) 
+            public static void printMoney(double dollarAmount) 
 ```
 - public - access modifier
 - static - belongs to the class
 - void = return type (does not return a value)
 - printMoney = method name
-- (double amount) = parameters
+- (double dollarAmount) = parameters
 
     **double = type** ,
-**amount = variable name**
+**dollarAmount = variable name**
 
 ### Method body
 * code inside { }
 ```
 Example:
-
 /*
-      {
-        if (dollarAmount < 0) {
-            System.err.println("Dollar amount is negative");
-        }
-        System.out.printf("$%.2f%n", dollarAmount);
-      }
+          {
+            if (dollarAmount < 0) {
+                System.err.println("Dollar amount is negative");
+            }
+            System.out.printf("$%.2f%n", dollarAmount);
+          }
 */
 ```
 
 ### Parameter:
 - Variable inside method definition
 
-    (double amount) - is passed when calling the method
+    (dollarAmount) - is passed when calling the method
 
 ### Argument:
 - Actual value passed when calling the method
@@ -68,23 +65,20 @@ Example:
 ### Conditional statement
 ```
 Example:
-
-if (amount < 0) {
-System.err.println("Dollar amount is negative");
-}
+            if (dollarAmount < 0) {
+            System.err.println("Dollar amount is negative");
+            }
 ```
 ### Output & Formatting
 ```
 Example:
-
-  System.out.printf("$%.2f", amount);
+           System.out.printf("$%.2f", dollarAmount);
   ```
   - %f → floating-point number
   - %.2f → round to 2 decimal placeS
 ```
 Example:
-
-    $%.2f → prints like $9.96
+             $%.2f → prints like $9.96
 ```
   - System.err.println → prints error messages (usually in red in console).
 
@@ -132,24 +126,22 @@ Example:
 **Add parentheses if you want part of an expression to be evaluated first.**
 ```
 Example:
-
-  if ((age < 18) || (age >= 65)) {
-  // condition met if under 18 OR over 65
-  }
+          if ((age < 18) || (age >= 65)) {
+          // condition met if under 18 OR over 65
+          }
 ```
 ### COMPARING STRINGS
 - Use the **.equals()** method instead of == when comparing strings.
 ```
 Example:
-
-  String homeState = "Texas";
-  String contactPhone;
-
-  if (homeState.equals("Texas") || homeState.equals("Kansas")) {
-  contactPhone = "800-555-5555";
-  } else {
-  contactPhone = "855-555-5555";
-  }
+              String homeState = "Texas";
+              String contactPhone;
+            
+              if (homeState.equals("Texas") || homeState.equals("Kansas")) {
+              contactPhone = "800-555-5555";
+              } else {
+              contactPhone = "855-555-5555";
+              }
 ```
 ### TERNARY OPERATOR
 - Shortcut for simple if/else.
@@ -157,8 +149,7 @@ Example:
   **Syntax: (condition) ? valueIfTrue : valueIfFalse**
 ```
   Example:
-  
-  double price = (age < 18) ? 18.00 : 25.00;
+             double price = (age < 18) ? 18.00 : 25.00;
 ```
 
 # STRING FORMATTING
@@ -166,8 +157,8 @@ Example:
 - **System.out.printf()** lets you print formatted strings.
 ```
 Example:
-        double price = 9.9555;
-        System.out.printf("Price: $%.2f", price);
+            double price = 9.9555;
+            System.out.printf("Price: $%.2f", price);
 ```
 ### Common Placeholders
 
@@ -185,15 +176,13 @@ Example:
 
 ```
 Example:
-        String name = "Mercy";
-        int age = 75;
-        double hoursWorked = 42.5;
+            String name = "Mercy";
+            int age = 75;
+            double hoursWorked = 42.5;
 
 System.out.printf("%s is %d years old and worked %.1f hours today%n", name, age, hoursWorked);
-
 ```
 Output
-
  ```
  Mercy is 75 years old and worked 42.5 hours today
  ```
