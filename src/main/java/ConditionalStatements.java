@@ -53,12 +53,12 @@ BOOLEAN LOGIC
    false || false  = false
 
 
-
    * Add parentheses if you want part of an expression to be evaluated first.
      Example:
      if ((age < 18) || (age >= 65)) {
          // condition met if under 18 OR over 65
      }
+
 
 COMPARING STRINGS
    - Use the .equals() method instead of == when comparing strings.
