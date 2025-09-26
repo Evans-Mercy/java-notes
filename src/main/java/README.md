@@ -5,30 +5,30 @@
 ## **Method Structure** (Signature & body)
 ```
 Example:
-
-public class Methods {
-public static void main(String[] args) {
-
-         printMoney(9.9555); //example call
-         printMoney(-5);     //example negative value
-    }
-
-    public static void printMoney(double dollarAmount) {
-
-        if (dollarAmount < 0) {
-            System.err.println("Dollar amount is negative");
-        }
-        System.out.printf("$%.2f%n", dollarAmount);
-
-    }
-}
+            
+            public class Methods {
+            public static void main(String[] args) {
+            
+                     printMoney(9.9555); //example call
+                     printMoney(-5);     //example negative value
+                }
+            
+                public static void printMoney(double dollarAmount) {
+            
+                    if (dollarAmount < 0) {
+                        System.err.println("Dollar amount is negative");
+                    }
+                    System.out.printf("$%.2f%n", dollarAmount);
+            
+                }
+            }
 ```
 
 ### Method Signature
 ```
 Example:
 
-public static void printMoney (double dollarAmount) 
+public static void printMoney(double dollarAmount) 
 ```
 - public - access modifier
 - static - belongs to the class
