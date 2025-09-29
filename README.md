@@ -11,7 +11,7 @@ System.out.println("hi");
 
 ### Example:
 
-```
+```java
             public class Methods {
             public static void main(String[] args) {
             
@@ -31,8 +31,8 @@ System.out.println("hi");
 ```
 
 ### Method Signature
-```
 Example:
+```java
             public static void printMoney(double dollarAmount) 
 ```
 - public - access modifier
@@ -46,16 +46,15 @@ Example:
 
 ### Method body
 * code inside { }
-```
+
 Example:
-/*
+```java
           {
             if (dollarAmount < 0) {
                 System.err.println("Dollar amount is negative");
             }
             System.out.printf("$%.2f%n", dollarAmount);
           }
-*/
 ```
 
 ### Parameter:
@@ -70,21 +69,24 @@ Example:
 *(you can have more than one parameter or none)*
 
 ### Conditional statement
-```
+
 Example:
+```java
             if (dollarAmount < 0) {
             System.err.println("Dollar amount is negative");
             }
 ```
 ### Output & Formatting
-```
+
 Example:
+```java
            System.out.printf("$%.2f", dollarAmount);
-  ```
-  - %f → floating-point number
-  - %.2f → round to 2 decimal placeS
 ```
+  - %f → floating-point number
+  - %.2f → round to 2 decimal places
+
 Example:
+```java
              $%.2f → prints like $9.96
 ```
   - System.err.println → prints error messages (usually in red in console).
@@ -117,13 +119,13 @@ A method can return 0 or 1
 The Scanner class takes input from the user (like numbers, words, or lines of text).
 
 You need to import it before using:
-```
+```java
 import java.util.Scanner;
 ```
 ## Set Up
 
 - Create a Scanner object:
-```
+```java
 Scanner myScanner = new Scanner(System.in);
 ```
 
@@ -137,7 +139,7 @@ String line =    myScanner.nextLine();      // reads a whole line
 ## Examples
 
 Example 1: Ask for name and age
-```
+```java
 import java.util.Scanner;
 
         public class Main {
@@ -259,16 +261,19 @@ Close the main method and the Main class.
 
 
 **Add parentheses if you want part of an expression to be evaluated first.**
-```
+
 Example:
+```java
           if ((age < 18) || (age >= 65)) {
           // condition met if under 18 OR over 65
           }
 ```
 ### COMPARING STRINGS
 - Use the **.equals()** method instead of == when comparing strings.
-```
+  
 Example:
+```java
+
               String homeState = "Texas";
               String contactPhone;
             
@@ -282,16 +287,18 @@ Example:
 - Shortcut for simple if/else.
 
   **Syntax: (condition) ? valueIfTrue : valueIfFalse**
-```
-  Example:
+
+Example:
+```java
              double price = (age < 18) ? 18.00 : 25.00;
 ```
 
 # STRING FORMATTING
 ### Basic formatting with **printf**
 - **System.out.printf()** lets you print formatted strings.
-```
+
 Example:
+```java
             double price = 9.9555;
             System.out.printf("Price: $%.2f", price);
 ```
@@ -309,8 +316,8 @@ Example:
    | %%          | Literal percent sign              | %              |
 
 
-```
 Example:
+```java
             String name = "Mercy";
             int age = 75;
             double hoursWorked = 42.5;
@@ -318,7 +325,7 @@ Example:
 System.out.printf("%s is %d years old and worked %.1f hours today%n", name, age, hoursWorked);
 ```
 Output
- ```
+ ```java
  Mercy is 75 years old and worked 42.5 hours today
  ```
 
