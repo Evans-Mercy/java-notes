@@ -3,8 +3,15 @@
 
 # METHODS
 ## **Method Structure** (Signature & body)
+
+```java
+System.out.println("hi");
+
 ```
-Example:
+
+### Example:
+
+```
             public class Methods {
             public static void main(String[] args) {
             
@@ -96,12 +103,15 @@ A method can return 0 or 1
 - One parameter → methodName(int x)
 - Multiple parameters → methodName(int x, String y)
 
+## Key points
+
 **-Expression is a combination of values, variables, or operators that evaluates to a single value**
 
 **- It's good practice to have no more than 20 lines in a method.**
 
 **- Ctrl b - tells you what the highlighted item is.**
 
+**- A method can return two things - 0 and 1**
  # Scanners
 
 The Scanner class takes input from the user (like numbers, words, or lines of text).
@@ -317,3 +327,108 @@ Output
 - Use precision (.2f) for money or decimals.
 - Keep placeholders in order, arguments fill them left to right.
 
+# STRINGS
+- Non-primitive (reference type)
+
+
+  **Note: Non-primitive types start with a capital letter (e.g., String); primitives are lowercase (e.g., boolean).**
+
+
+- Represented by double quotes ("")
+- Escape quotes in a text using \ 
+Example:
+```java
+String welcome = "She said, \"How are you\"?";
+```
+### Escape Characters
+- \n - newline
+- \t - tab
+- \r - return
+- \\ - backslash
+- \' - single quote
+- \" - double quote
+
+## Comparing strings
+**DO NOT USE (==)!**
+
+
+Use **.equals()** method
+
+For case sensitivity use **.equalsIgnoreCase()** for capitalization.
+
+### Example
+```java
+String s1 = "A";
+String s2 = "A";
+if (s1.equals(s2)){
+    //this will be true
+        }
+
+String s1 = "ABC";
+String s2 = "abc";
+
+if (s1.equalsIgnoreCase(s2)) {
+    //this will be true
+        }
+
+```
+## Examples of String Methods
+
+
+.trim() – removes whitespace from the start and end of the string
+
+.toUpperCase() – converts all characters to uppercase
+
+.toLowerCase() – converts all characters to lowercase
+
+.charAt(index) – returns the character at a specific index
+
+.substring(start) – returns part of the string from start index to the end
+
+.substring(start, end) – returns part of the string between start and end indexes
+
+.equals(string) – compares the values of two strings (case-sensitive)
+
+.equalsIgnoreCase(string) – compares values ignoring case
+
+.contains(sequence) – checks if a string contains a sequence of characters
+
+.startsWith(prefix) – checks if string starts with the given prefix
+
+.endsWith(suffix) – checks if string ends with the given suffix
+
+.replace(old, new) – replaces characters or sequences in a string
+
+.indexOf(string) – returns the index of the first occurrence of a substring
+
+.lastIndexOf(string) – returns the index of the last occurrence of a substring
+
+.split(delimiter) – splits the string into an array by the given delimiter
+
+.isEmpty() – checks if the string is empty ("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Key points
+- Primitive types: store actual values directly in memory.
+
+- Reference types: store a reference (memory address) that points to where the object’s data is stored.
+### Example
+```java
+int a = 5;        // '5' stored directly in memory  
+String name = "Hi"; // memory stores a reference to where "Hi" is stored  
+```
+- == – checks if two strings refer to the same memory location.
+
+- .equals() – checks if two strings have the same value/content.
