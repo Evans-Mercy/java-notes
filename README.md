@@ -112,8 +112,6 @@ A method can return 0 or 1
 **- It's good practice to have no more than 20 lines in a method.**
 
 **- Ctrl b - tells you what the highlighted item is.**
-
-**- A method can return two things - 0 and 1**
  # Scanners
 
 The Scanner class takes input from the user (like numbers, words, or lines of text).
@@ -380,7 +378,7 @@ if (s1.equalsIgnoreCase(s2)) {
 
 ```
 ## Examples of String Methods
-
+.length - gets the length (number of characters) of the string
 
 .trim() – removes whitespace from the start and end of the string
 
@@ -414,19 +412,6 @@ if (s1.equalsIgnoreCase(s2)) {
 
 .isEmpty() – checks if the string is empty ("")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Key points
 - Primitive types: store actual values directly in memory.
 
@@ -439,3 +424,141 @@ String name = "Hi"; // memory stores a reference to where "Hi" is stored
 - == – checks if two strings refer to the same memory location.
 
 - .equals() – checks if two strings have the same value/content.
+
+
+# Classes 
+- **classes have members; fields & methods**
+
+Types of classes:
+
+        1. Public
+        2. Private
+
+1. Public - accessible from anywhere (any other class, package or project).
+
+Example:
+```java
+public class Person {
+    public String name; // can be accessed from anywhere
+}
+```
+```java
+Person p = new Person();
+p.name = "Mercy"; // ✅ works anywhere
+
+```
+
+2. Private - accessible only inside the same class.
+  - Used to protect data so it can’t be changed directly.
+
+- Usually combined with getter and setter methods to allow controlled access.
+
+Example:
+```java
+public class Person {
+    private String name; // can only be accessed inside Person class
+
+    public String getName() {
+        return name; // getter allows reading
+    }
+
+    public void setName(String name) {
+        this.name = name; // setter allows controlled updating
+    }
+}
+```
+```java
+Person p = new Person();
+p.setName("Mercy"); // ✅ works through setter
+System.out.println(p.getName()); // ✅ works through getter
+
+```
+
+# OOP
+Key concepts :
+
+- Class — like a blueprint for an object.
+
+- Object — an actual thing made from that blueprint.
+
+- Encapsulation — keeping data private inside the class and giving access through getters/setters. (protecting)
+
+- Constructor — a special method that runs when you create an object.
+
+# Constructors 
+- special method that creates an object. 
+    - has the same name as the class
+    - no return type
+    - automatically called when an object is created with new
+ ## Types of constructors
+1. Default Constructor
+    - no parameters; sets default values.
+```java
+public class CellPhone {
+    private String model;
+
+    public CellPhone() {
+        model = "Unknown";
+    }
+}
+```
+2. Parameterized Constructor
+    - takes parameters to set values (when the object is created).
+```java
+public class CellPhone {
+    private String model;
+
+    public CellPhone(String model) {
+        this.model = model;
+    }
+}
+```
+Example:
+```java
+CellPhone phone1 = new CellPhone(); // Calls default constructor
+CellPhone phone2 = new CellPhone("iPhone 15"); // Calls parameterized constructor
+```
+
+## Setters and Getters
+- Getter → a method that returns (gets) the value of a private variable.
+
+- Setter → a method that updates (sets) the value of a private variable.
+
+They are used because variables are often marked private (hidden) for encapsulation (protection).
+
+Example:
+```java
+public class Person {
+    private String name;  // private variable, hidden from outside
+
+    // Getter
+    public String getName() {
+        return name;  // lets us read the value
+    }
+
+    // Setter
+    public void setName(String newName) {
+        name = newName;  // lets us update the value
+    }
+}
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person();   // create a Person object
+
+        // use setter to change the value
+        p.setName("Mercy"); 
+
+        // use getter to read the value
+        System.out.println(p.getName()); // prints Mercy
+    }
+}
+```
+
+
+
+
+
+
+
