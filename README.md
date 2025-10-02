@@ -487,6 +487,7 @@ Key concepts :
 
 # Constructors 
 - special method that creates an object. 
+    - starts with a capital letter.
     - has the same name as the class
     - no return type
     - automatically called when an object is created with new
@@ -556,6 +557,37 @@ public class Main {
 }
 ```
 
+# OVERLOADING
+
+**Method overloading**
+
+- when a class has multiple methods with the same name but different signatures.
+
+- The signature is determined by taking the name of a method and
+  adding to it the type of each parameter
+  Example
+```java
+  public class Thingy {
+  public void foo() {
+  // signature foo
+  }
+  public void foo(int x) {
+  // signature foo_int
+  }
+  public void foo(int x, int y) {
+  // signature foo_int_int
+  }
+  public void foo(int x, String s) {
+  // signature foo_int_String
+  }
+  public void foo(String s, int x) {
+  // signature foo_String_int
+  }
+  public void foo(String x) {
+  // signature foo_String
+  }
+  }
+```
 
 
 
