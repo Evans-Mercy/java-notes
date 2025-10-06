@@ -592,6 +592,10 @@ public class Main {
 - takes in different signatures. ()
 
 
+# LOOPS AND ARRAYS
+
+## ARRAYS
+
 
 
 
