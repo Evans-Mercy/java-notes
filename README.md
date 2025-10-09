@@ -594,7 +594,173 @@ public class Main {
 
 # LOOPS AND ARRAYS
 
-## ARRAYS
+## Loops
+Loops let us repeat code without writing the same thing multiple times. Instead of writing 100 System.out.println() lines, we let a loop handle repetition automatically.
+
+## Types of Loops 
+
+        🔹 while Loop
+
+Repeats while a condition is true.
+
+The condition is checked before each iteration.
+```java
+int count = 0;
+while (count < 5) {
+System.out.println("Count is " + count);
+count++;
+}
+```
+
+💡 Use this when you don’t know how many times the loop should run (e.g., keep looping until the user types "exit").
+
+    🔹 do/while Loop
+
+Similar to while, but it runs at least once, because the condition is checked after the loop body.
+```java
+int number;
+do {
+number = scanner.nextInt();
+System.out.println("You entered " + number);
+} while (number != 0);
+
+```
+
+
+💡 Great for input validation: you always want the user to enter something at least once.
+
+    🔹 for Loop
+
+Runs a set number of times (best when you know the count ahead of time).
+```java
+for (int i = 0; i < 5; i++) {
+System.out.println("i = " + i);
+}
+```
+
+💡 Classic choice for counting, iterating over arrays, etc.
+
+    🔹 for-each Loop (enhanced for loop)
+
+Special loop for iterating through arrays or collections.
+```java
+String[] names = {"Alice", "Bob", "Charlie"};
+for (String name : names) {
+System.out.println(name);
+}
+```
+
+💡 Cleaner, but doesn’t give you the index number.
+
+## break vs continue
+
+- break: jumps out of the loop completely.
+```java
+for (int i = 0; i < 10; i++) {
+if (i == 5) break;  // stops loop entirely
+System.out.println(i);
+}
+
+```
+
+- continue: skips the current iteration, then continues with the next one.
+```java
+for (int i = 0; i < 10; i++) {
+if (i % 2 == 0) continue;  // skip even numbers
+System.out.println(i);
+}
+```
+
+💡 Think:
+
+break = ninja smoke bomb 🥷💨 (escape completely)
+
+continue = sidestep ➡️ (skip, but keep fighting)
+
+## Arrays
+
+An array stores multiple values of the same type in a single variable.
+
+- Fixed size (cannot grow/shrink after creation).
+
+**Declaring & Initializing**
+```java
+int[] numbers = new int[5];     // empty array of 5 ints
+numbers[0] = 10;                // assign value
+
+int[] scores = {95, 87, 78};    // shortcut initialization
+
+```
+
+**Accessing Elements**
+```java
+System.out.println(scores[0]);  // first element (95)
+System.out.println(scores[2]);  // third element (78)
+```
+
+
+**Looping through an Array**
+```java
+for (int i = 0; i < scores.length; i++) {
+System.out.println(scores[i]);
+}
+
+// or with for-each loop
+        for (int score : scores) {
+        System.out.println(score);
+}
+```
+## Arrays + Methods
+
+Passing an array to a method
+```java
+public static void printArray(int[] arr) {
+for (int num : arr) {
+System.out.println(num);
+}
+}
+```
+
+
+
+Returning an array from a method
+```java
+public static int[] createArray() {
+return new int[] {1, 2, 3};
+}
+```
+
+## Array Tricks
+
+Sorting: Arrays.sort(myArray);
+
+Copying: Arrays.copyOf(myArray, newLength);
+
+Searching: Arrays.binarySearch(myArray, value);
+
+
+✅ **Key Takeaway:**
+
+Use while when condition-based.
+
+Use do/while when you must run at least once.
+
+Use for when you know the count.
+
+Use arrays to store groups of related values.
+
+Combine loops + arrays for powerful iteration.
+
+
+
+
+
+
+
+
+# AGILE SOFTWARE DEVELOPMENT
+
+1. Waterfall method
 
 
 
