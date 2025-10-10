@@ -599,7 +599,7 @@ Loops let us repeat code without writing the same thing multiple times. Instead 
 
 ## Types of Loops 
 
-        🔹 while Loop
+### while Loop
 
 Repeats while a condition is true.
 
@@ -612,9 +612,9 @@ count++;
 }
 ```
 
-💡 Use this when you don’t know how many times the loop should run (e.g., keep looping until the user types "exit").
+Use this when you don’t know how many times the loop should run (e.g., keep looping until the user types "exit").
 
-    🔹 do/while Loop
+### do/while Loop
 
 Similar to while, but it runs at least once, because the condition is checked after the loop body.
 ```java
@@ -627,9 +627,9 @@ System.out.println("You entered " + number);
 ```
 
 
-💡 Great for input validation: you always want the user to enter something at least once.
+ Great for input validation: you always want the user to enter something at least once.
 
-    🔹 for Loop
+### for Loop
 
 Runs a set number of times (best when you know the count ahead of time).
 ```java
@@ -638,9 +638,9 @@ System.out.println("i = " + i);
 }
 ```
 
-💡 Classic choice for counting, iterating over arrays, etc.
+Classic choice for counting, iterating over arrays, etc.
 
-    🔹 for-each Loop (enhanced for loop)
+### for-each Loop (enhanced for loop)
 
 Special loop for iterating through arrays or collections.
 ```java
@@ -650,7 +650,7 @@ System.out.println(name);
 }
 ```
 
-💡 Cleaner, but doesn’t give you the index number.
+ Cleaner, but doesn’t give you the index number.
 
 ## break vs continue
 
@@ -671,7 +671,7 @@ System.out.println(i);
 }
 ```
 
-💡 Think:
+Think:
 
 break = ninja smoke bomb 🥷💨 (escape completely)
 
@@ -739,7 +739,7 @@ Copying: Arrays.copyOf(myArray, newLength);
 Searching: Arrays.binarySearch(myArray, value);
 
 
-✅ **Key Takeaway:**
+**Key Takeaway:**
 
 Use while when condition-based.
 
